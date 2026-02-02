@@ -5,7 +5,7 @@ $external_duty = 5;
 $minimum_required_faculty = 30;
 $present_faculty = $total_no_of_faculty - ($approved_leave + $external_duty);
 
-# if total faculty = present faculty
+# if total faculty = present faculty , we can use this method also
 if($approved_leave && $external_duty == 0 ){
     echo "Department is fully operational with complete staff availability";
 }
