@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PHP Calculator</title>
+<style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 200px 400px 50px 400px  ;
+            background-color:pink;
+            text-align: center;
+            border : 50px solid white;
+        }
+        input, select, button {
+            padding: 6px;
+            margin: 5px 0;
+        }
+        .result {
+            margin-top: 15px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<h2>PHP Calculator</h2>
+
+<form method="post" action= "calculator.php">
+ <label>Number 1:</label><br>
+<input type="number" name="num1" ><br><br>
+
+<label>Operator:</label><br>
+    <select name="operator" >
+        <option value="+">+</option>
+        <option value="-">-</option>
+        <option value="*">*</option>
+        <option value="/">/</option>
+    </select><br><br>
+
+<label>Number 2:</label><br>
+<input type="number" name="num2" ><br><br>
+ <button type="submit" name="calculate">Calculate</button><br><br>
+
+ <label>Result </label><br>
+    <input type= "number" name= "result"><br><br>
+</form>
+</body>
+</html>

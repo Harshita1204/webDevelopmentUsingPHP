@@ -1,0 +1,12 @@
+body {
+    margin: 50px 50px 50px 50px;
+  background-color: rgb(228, 125, 202);
+}
+h1 {
+  color: blue;
+  text-align:right;
+}
+p {
+  color: red;
+  text-transform:uppercase;
+}

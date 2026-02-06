@@ -16,9 +16,6 @@
         margin-bottom: 15px 0;
     }
 
-    .student-box p {
-    margin: 6px 0;
-}
 
     .separator {
     border: none;
@@ -27,8 +24,8 @@
 }
 
         .header {
-            background-color: skyblue;
-            color: #003366;
+            background-color: #D657A5;
+            color: #051729;
             text-align: center;
             padding: 30px;
             font-size: 26px;
