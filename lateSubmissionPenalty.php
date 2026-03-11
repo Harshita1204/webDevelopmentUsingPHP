@@ -4,13 +4,11 @@ function rawPenalty($late){
     $penaltyPerDay = 2;
     return $penaltyPerDay * $late;
 }
-
-$checkPenalty=function($penalty)use($max_penalty){
-    if($penalty<$max_penalty){
-        return max(0,$max_penalty);
-    }else{
+$checkPenalty = function($penalty) use ($max_penalty){
+    if($penalty > $max_penalty){
         return $max_penalty;
     }
+    return $penalty;
 };
 
 if($_SERVER['REQUEST_METHOD']==='POST'){
