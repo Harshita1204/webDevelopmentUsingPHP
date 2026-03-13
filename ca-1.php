@@ -1,7 +1,30 @@
 <!DOCTYPE html>
 <html>
 <title>candidate evaluation summary</title>
+<style>
+ *{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+body{
+    height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    background:#E8CAE8;
+    border:8px inset #BA51E0;   
+}
+.container{
+    background-color:#D0A5E8;
+    padding:40px;
+    border-radius:10px;
+    width:450px;
+    border: 10px solid #BA51E0;
+}
+    </style>
 <body>
+<div class = "container">
 <form method="POST" action="">
     Candidate name:
     <input type="text" name="name" placeholder="candidate name"><br>
@@ -23,9 +46,11 @@ if($_SERVER['REQUEST_METHOD'] === 'POST'){
         $to_uppercase = strtoupper($candidate_name);
         $to_count = strlen($candidate_name);
         $first_letter = $candidate_name[0];
+        $reverse = strrev($candidate_name);
         echo "Candidate Name: $to_uppercase <br>";
         echo "Total Characters: $to_count <br>";
-        echo "First Letter: $first_letter <br><br>";
+        echo "First Letter: $first_letter <br>";
+        echo "reverse:   $reverse <br><br>";
     }
     analyzeName($candidate_name);
 
