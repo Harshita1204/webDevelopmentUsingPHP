@@ -8,6 +8,7 @@ if(!$conn){
     die("connection failed \n".mysqli_conneect_error());
 }
 else{
-    echo"connection successful";
+    echo"connection successful \n";
+    echo"\n";
 }
 ?>
