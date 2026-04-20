@@ -20,7 +20,7 @@ body{
     padding:40px;
     border-radius:10px;
     width:450px;
-    border: 10px solid #BA51E0;
+    border: 10px solid #ec4e83;
 }
     </style>
 <body>
