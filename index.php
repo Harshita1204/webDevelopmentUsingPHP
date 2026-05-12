@@ -16,7 +16,6 @@ if(isset($_POST['submit'])){
     (student_name, course, email, marks)
 
     VALUES
-
     ('$student_name', '$course', '$email', '$marks')";
 
     if(mysqli_query($conn, $insert_query)){
@@ -26,7 +25,6 @@ if(isset($_POST['submit'])){
     }
 }
 
-/* Fetch All Students */
 
 $all_students = mysqli_query($conn, "SELECT * FROM students");
 
